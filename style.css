@@ -1,0 +1,57 @@
+/*
+Theme Name: Travel Blogging
+Theme URI: https://www.titanthemes.net/themes/free-travel-wordpress-theme/
+Author: Titan Themes
+Author URI: https://www.titanthemes.net/
+Description: "Travel Blogging" is a dynamic WordPress theme tailor-made for travel enthusiasts eager to share their adventures and experiences with a global audience. Boasting a sleek design and intuitive interface, Travel Blogging offers a seamless platform for presenting travel stories, captivating photographs, and insightful recommendations. Its responsive design ensures a seamless viewing experience across devices, allowing readers to engage with content effortlessly. The theme offers extensive customization options, empowering bloggers to personalize colors, fonts, and layouts to reflect their unique style and personality. With integrated social sharing features, readers can easily distribute captivating travel narratives across various platforms, amplifying reach and fostering community engagement. Travel Blogging prioritizes visual storytelling, with support for high-resolution photos and videos that vividly depict the essence of each journey. Optimized for search engines and equipped with optimized code, the theme prioritizes speed, performance, and SEO-friendliness, ensuring optimal user experience and visibility in search results. With ongoing support and updates, Travel Blogging provides a reliable foundation for travel bloggers to inspire exploration and foster connections within the vibrant travel community.
+Requires at least: 6.1
+Tested up to: 6.4
+Requires PHP: 5.6
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: travel-blogging
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, wide-blocks, block-styles, blog, photography, entertainment
+*/
+
+.home .header-area {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    border-bottom: solid 1px #fff;
+}
+
+.home .header-area .wp-block-site-title a,.home .header-area .wp-block-navigation-link a {
+    color: #fff;
+}
+
+.wp-site-blocks{
+	padding: 0 !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+	.header-area {
+		text-align: center;
+	}
+
+	.home .header-area .wp-block-site-title a,.home .header-area .wp-block-navigation-link a {
+	    color: #000;
+	}
+
+	.home .header-area {
+	    position: static;
+	    border-bottom: none;
+	}
+
+	.header-area .wp-container-core-buttons-layout-1.wp-container-core-buttons-layout-1 {
+		justify-content: center;
+	}
+
+	.topheader-area .has-text-align-right{
+		text-align: center;
+	}
+	
+	.topheader-area .wp-block-social-links{
+	    justify-content: center;
+	}
+}
